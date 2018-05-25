@@ -6,7 +6,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <h1>Cifrado César</h1>
+      <form>
+        <div class="inputBox">
+          <textarea id="textInput" name="textInput" rows="1" placeholder="Tu mensaje aquí..."></textarea>
+        </div>
+        <div class="inputBox">
+          <div class="parameterInput">
+            <label for="shift">DESPLAZAMIENTO:</label>
+            <input id="shift" type="number" name="shift" value="3" min="1"></input>
+          </div>
+          <div class="parameterInput">
+            <input id="encode" type="submit" name="encode" value="CODIFICAR" onclick=""></input>
+            <input id="decode" type="submit" name="decode" value="DECODIFICAR"></input>
+          </div>
+        </div>
+      </form>
+      <div class="outputBox">
+        <p id="textOutput"></p>
+      </div>
+    </div>
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

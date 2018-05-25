@@ -1,0 +1,46 @@
+#root {
+    margin: auto;
+    width: 50%;
+}
+
+  form {
+    display: block;
+  }
+
+  .inputBox {
+    display: block;
+  }
+
+  .parameterInput {
+    display: block;
+  }
+
+    textarea {
+      background-color: #F2F1F6;
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      height: 200px;
+      width: 400px;
+      resize: none;
+      padding: 12px 20px;
+      display: block;
+    }
+
+
+
+    input[type=number] {
+      width: 50px;
+      height: 44px;
+      text-align: center;
+    }
+
+    input[type=submit] {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      }
+
+  .outputBox {
+    display: block;
+  }
