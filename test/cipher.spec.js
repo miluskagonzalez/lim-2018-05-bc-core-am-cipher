@@ -49,9 +49,9 @@ describe('cipher', () => {
     });
 
     it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado', () => {
-      assert.equal(typeof cipher.createCipherWithOffset(33), 'object');
-      assert.equal(typeof cipher.createCipherWithOffset(33).encode, 'function');
-      assert.equal(typeof cipher.createCipherWithOffset(33).decode, 'function');
+      assert.equal(typeof cipher.createCipherWithOffset(), 'object');
+      assert.equal(typeof cipher.createCipherWithOffset().encode, 'function');
+      assert.equal(typeof cipher.createCipherWithOffset().decode, 'function');
     });
 
     it('debería retornar "HIJhij123 ¡?@" para "ABCabc123 ¡?@" con offset 33', () => {
