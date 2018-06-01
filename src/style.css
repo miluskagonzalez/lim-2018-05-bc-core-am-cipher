@@ -1,44 +1,50 @@
-#root {
-    margin: auto;
-    width: 50%;
+body {
+  background: url('pictures/sprinkles.png');
 }
-  
-  form {
-    display: block;
+textarea {
+  background-color: #FFFFFF;
+  border: none;
+  font-size: 20px;
+  height: 150px;
+  width: 90%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  resize: none;
+  padding: 12px 20px;
+}
+.parameterInput {
+  width: 90%;
+  margin-left: 5%;
+  display: block;
+}
+input[type=number] {
+  width: 40px;
+  height: 44px;
+  text-align: center;
+}
+input[type=button] {
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+#decode {
+  float: right;
+}
+#textOutput {
+  background-color: #FFFFFF;
+  border:none;
+  height: 150px;
+  width: 90%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+}
+@media (min-width: 325px) {
+  textarea {
+    width: 80%;
+    margin-left: 10%;
   }
-
-  .inputBox {
-    display: block;
-  }
-
-  .parameterInput {
-    display: block;
-  }
-
-    textarea {
-      background-color: #F2F1F6;
-      border: none;
-      border-radius: 10px;
-      font-size: 20px;
-      height: 200px;
-      width: 400px;
-      resize: none;
-      padding: 12px 20px;
-      display: block;
-    }
-    
-    input[type=number] {
-      width: 50px;
-      height: 44px;
-      text-align: center;
-    }
-
-    input[type=submit] {
-      width: 150px;
-      height: 50px;
-      cursor: pointer;
-      }
-
-  .outputBox {
-    display: block;
-  }
+}

@@ -1,10 +1,14 @@
 window.cipher = {
+  // Función de cifrado
   encode: (offset, string) => {
+    // Declarando variables
     let strCode = 0;
     let newStrCode = 0;
     let newStr = '';
     let encodedStr = '';
-    for (let i=0; i < string.length; i++) {
+    // Recorriendo los caracteres del string
+    for (let i = 0; i < string.length; i++) {
+      // Obteniendo el código ASCII de cada caracter
       strCode = string.charCodeAt(i);
       // Cifrando mayúsculas, minúsculas, y luego agregando tal cual el resto de caracteres
       if (strCode >= 65 && strCode <= 90) {
@@ -22,13 +26,14 @@ window.cipher = {
     }
     return encodedStr;  
   },
+  // Función de descifrado
   decode: (offset, string) => {
     let strCode = 0;
     let newStrCode = 0;
     let newStr = '';
     let decodedStr = '';
     // Recorriendo los caracteres del string
-    for (let i=0; i < string.length; i++) {
+    for (let i = 0; i < string.length; i++) {
       // Obteniendo el código ASCII de cada caracter
       strCode = string.charCodeAt(i);
       // Cifrando mayúsculas, minúsculas, y luego agregando tal cual el resto de caracteres
@@ -45,5 +50,13 @@ window.cipher = {
       }
     }
     return decodedStr;
+  },
+  // Función 
+  createCipherWithOffset: offset => {
+    const result = {
+      encode: string => cipher.encode(offset, string),
+      decode: string => cipher.decode(offset, string)
+    };
+    return result;
   }
 }
