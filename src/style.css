@@ -1,7 +1,17 @@
-body {
-  background: url('pictures/sprinkles.png');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-weight: 300;
+  color: #38393F;
+  text-align: center;
+  border-block-end-color: rgb(85, 194, 167);
+}
+h1 span {
+  font-weight: 700;
 }
 textarea {
+  color: #38393F;
   background-color: #FFFFFF;
   border: none;
   font-size: 20px;
@@ -11,29 +21,53 @@ textarea {
   box-sizing: border-box;
   resize: none;
   padding: 12px 20px;
-}
-.parameterInput {
-  width: 90%;
-  margin-left: 5%;
   display: block;
 }
-input[type=number] {
-  width: 40px;
-  height: 44px;
+.shiftInput {
+  height: 50px;
+  width: 90%;
+  margin-left: 5%;
+  border: none;
+  background-color: #38393F;
   text-align: center;
+  color: white;
+  box-sizing: border-box;
+  display: block;
+}
+.buttons {
+  height: 50px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: rgb(85, 194, 167);
+  display: block;
+}
+#shiftLabel {
+  line-height: 50px;
+}
+#shift {
+  width: 130px;
+  height: 44px;
+  border: 2px solid;
+  text-align: center;
+  color: #38393F;
+  float: right;
 }
 input[type=button] {
-  width: 130px;
-  height: 50px;
+  width: 50%;
+  height: 40px;
   cursor: pointer;
   border: none;
-  border-radius: 10px;
-  background-color: #FFFFFF;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  border: none;
 }
 #decode {
   float: right;
 }
 #textOutput {
+  color: #38393F;
+  font-size: 20px;
   background-color: #FFFFFF;
   border:none;
   height: 150px;
@@ -41,10 +75,129 @@ input[type=button] {
   margin-left: 5%;
   box-sizing: border-box;
   padding: 12px 20px;
+  display: block;
 }
 @media (min-width: 325px) {
   textarea {
     width: 80%;
     margin-left: 10%;
+  }
+  .shiftInput {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .buttons {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #textOutput {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 350px) {
+  textarea {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .shiftInput {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .buttons {
+    width: 70%;
+    margin-left: 15%;
+  }
+  #textOutput {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media (min-width: 400px) {
+  textarea {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .shiftInput {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .buttons {
+    width: 60%;
+    margin-left: 20%;
+  }
+  #textOutput {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 450px) {
+  textarea {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .shiftInput {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .buttons {
+    width: 50%;
+    margin-left: 25%;
+  }
+  #textOutput {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 550px) {
+  .shiftInput {
+    width: 40%;
+    margin-left: 30%;
+  }
+  .buttons {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+@media (min-width: 700px) {
+  .shiftInput {
+    width: 35%;
+    margin-left: 32.5%;
+  }
+  .buttons {
+    width: 35%;
+    margin-left: 32.5%;
+  }
+}
+@media (min-width: 800px) {
+  .shiftInput {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .buttons {
+    width: 30%;
+    margin-left: 35%;
+  }
+}
+@media (min-width: 900px) {
+  .shiftInput {
+    width: 25%;
+    margin-left: 37.5%;
+  }
+  .buttons {
+    width: 25%;
+    margin-left: 37.5%;
+  }
+}
+@media (min-width: 1120px) {
+  .shiftInput, .buttons {
+    width: 22.5%;
+    margin-left: 38.75%;
+  }
+}
+@media (min-width: 1300px) {
+  .shiftInput, .buttons {
+    width: 20%;
+    margin-left: 40%;
   }
 }
