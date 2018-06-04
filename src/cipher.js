@@ -28,6 +28,7 @@ window.cipher = {
   },
   // Función de descifrado
   decode: (offset, string) => {
+    // Declarando variables
     let strCode = 0;
     let newStrCode = 0;
     let newStr = '';
@@ -51,7 +52,7 @@ window.cipher = {
     }
     return decodedStr;
   },
-  // Función 
+  // Función de cifrado y descifrado con offset fijo
   createCipherWithOffset: offset => {
     const result = {
       encode: string => cipher.encode(offset, string),
