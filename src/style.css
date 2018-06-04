@@ -161,19 +161,43 @@ input[type=button] {
 }
 @media (min-width: 700px) {
   .shiftInput {
-    width: 256px;
-    margin-left: 40%;
+    width: 35%;
+    margin-left: 32.5%;
   }
   .buttons {
-    width: 256px;
-    margin-left: 40%;
+    width: 35%;
+    margin-left: 32.5%;
+  }
+}
+@media (min-width: 800px) {
+  .shiftInput {
+    width: 30%;
+    margin-left: 35%;
+  }
+  .buttons {
+    width: 30%;
+    margin-left: 35%;
+  }
+}
+@media (min-width: 900px) {
+  .shiftInput {
+    width: 25%;
+    margin-left: 37.5%;
+  }
+  .buttons {
+    width: 25%;
+    margin-left: 37.5%;
+  }
+}
+@media (min-width: 1120px) {
+  .shiftInput, .buttons {
+    width: 22.5%;
+    margin-left: 38.75%;
   }
 }
 @media (min-width: 1300px) {
-  .shiftInput {
-    width: 256px;
-  }
-  .buttons {
-    width: 256px;
+  .shiftInput, .buttons {
+    width: 20%;
+    margin-left: 40%;
   }
 }
